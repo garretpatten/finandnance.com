@@ -22,29 +22,44 @@
 
     <div class="max-w-none soft-enter soft-enter-delay-1">
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
+        Maureen Patten writes the <em class="text-gray-100">Fin and Nance</em>
+        series with one simple goal: to make financial literacy feel like an
+        adventure, not a lesson. She believes that when children meet money
+        concepts through characters they love, those ideas stick for life.
       </p>
 
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Each book follows siblings Fin and Nance as they navigate real-world
+        moments — borrowing, saving, bartering, and noticing how money works in
+        their community. With humor, heart, and a gentle dose of curiosity, the
+        stories give children and families a shared language for talking about
+        smart choices.
       </p>
 
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo.
+        The series is written for independent readers ages 6–10 and works
+        beautifully as a read-aloud for younger children. Every book ends with a
+        bonus section of questions and discussion prompts designed to keep the
+        conversation going at home or in the classroom.
       </p>
 
       <p class="font-sans text-gray-300 leading-relaxed">
-        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-        sequi nesciunt.
+        You can find the books on
+        <a
+          href="https://www.amazon.com/dp/B0G5PMK92F"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-terracotta-300 hover:text-terracotta-100 underline underline-offset-4 transition-colors duration-[230ms]"
+          >Amazon</a
+        >
+        and follow the latest news on Instagram at
+        <a
+          href="https://www.instagram.com/fin_and_nance/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-iris-300 hover:text-iris-100 underline underline-offset-4 transition-colors duration-[230ms]"
+          >@fin_and_nance</a
+        >.
       </p>
     </div>
   </div>

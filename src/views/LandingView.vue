@@ -66,5 +66,6 @@
         </router-link>
       </div>
     </section>
+
   </div>
 </template>

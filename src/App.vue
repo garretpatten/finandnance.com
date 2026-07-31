@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen bg-gray-950 text-gray-100 transition-colors duration-[230ms]"
+    class="min-h-screen bg-[#5f7d49] text-gray-100 transition-colors duration-[230ms]"
   >
     <a
       href="#main-content"

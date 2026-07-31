@@ -26,22 +26,22 @@
     @apply font-heading;
   }
 
-  /* Gruvbox dark hard shell — matches Kitty dark0_hard / default fg */
+  /* Site brand background — earthy green that keeps the warm foreground readable */
   html.dark {
-    background-color: #1d2021;
+    background-color: #5f7d49;
     color: #ebdbb2;
   }
 
   html.dark body {
-    background-color: #1d2021;
+    background-color: #5f7d49;
     color: inherit;
   }
 
-  /* Neutralize Tailwind’s default blue ring / white ring-offset on Gruvbox surfaces */
+  /* Neutralize Tailwind’s default blue ring / white ring-offset on brand surfaces */
   html.dark *,
   html.dark *::before,
   html.dark *::after {
-    --tw-ring-offset-color: #1d2021;
+    --tw-ring-offset-color: #5f7d49;
     --tw-ring-color: rgb(131 165 152 / 0.45);
   }
 }
@@ -72,7 +72,8 @@
   }
 
   .interactive-focus:focus-visible {
-    @apply ring-2 ring-cobalt-500 ring-offset-2 ring-offset-gray-950;
+    @apply ring-2 ring-cobalt-500 ring-offset-2;
+    --tw-ring-offset-color: #5f7d49;
   }
 
   .soft-enter {

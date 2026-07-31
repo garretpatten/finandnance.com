@@ -2,13 +2,22 @@
   <article
     class="flex flex-col sm:flex-row gap-6 rounded-lg border border-gray-700 bg-gray-900/90 p-5 transition-shadow duration-[230ms] hover:shadow-lg"
   >
-    <!-- Book cover placeholder -->
+    <!-- Book cover -->
     <div
-      class="shrink-0 mx-auto sm:mx-0 w-32 h-48 sm:w-36 sm:h-52 rounded-md shadow-md flex items-center justify-center text-center p-3"
-      :class="coverClass"
+      class="shrink-0 mx-auto sm:mx-0 w-32 h-48 sm:w-36 sm:h-52 rounded-md shadow-md overflow-hidden"
+      :class="{ [coverClass]: !book.cover }"
       aria-hidden="true"
     >
-      <span class="font-heading text-sm font-bold leading-tight">
+      <img
+        v-if="book.cover"
+        :src="book.cover"
+        :alt="`${book.title} cover`"
+        class="w-full h-full object-cover"
+      />
+      <span
+        v-else
+        class="font-heading text-sm font-bold leading-tight flex items-center justify-center text-center p-3 w-full h-full"
+      >
         {{ book.title }}
       </span>
     </div>
@@ -61,23 +70,23 @@ const statusLabel = computed(() =>
 
 const statusBadgeClass = computed(() =>
   props.book.status === "in-production"
-    ? "bg-torch-900/40 text-torch-300 border border-torch-700"
-    : "bg-forest-900/40 text-forest-300 border border-forest-700",
+    ? "bg-terracotta-900/40 text-terracotta-100 border border-terracotta-700"
+    : "bg-sage-900/40 text-sage-100 border border-sage-700",
 );
 
 const coverClass = computed(() => {
   const topic = props.book.topic;
-  if (topic === "Borrowing") return "bg-cobalt-900/60 text-cobalt-100 border border-cobalt-700";
-  if (topic === "Money Management") return "bg-sun-900/60 text-sun-100 border border-sun-700";
-  if (topic === "Inflation") return "bg-iris-900/60 text-iris-100 border border-iris-700";
+  if (topic === "Borrowing") return "bg-terracotta-900/60 text-terracotta-100 border border-terracotta-700";
+  if (topic === "Money Management") return "bg-butter-900/60 text-butter-100 border border-butter-700";
+  if (topic === "Inflation") return "bg-aqua-900/60 text-aqua-900 border border-aqua-700";
   return "bg-gray-800 text-gray-100 border border-gray-700";
 });
 
 const topicColorClass = computed(() => {
   const topic = props.book.topic;
-  if (topic === "Borrowing") return "bg-cobalt-500";
-  if (topic === "Money Management") return "bg-sun-500";
-  if (topic === "Inflation") return "bg-iris-500";
+  if (topic === "Borrowing") return "bg-terracotta";
+  if (topic === "Money Management") return "bg-butter";
+  if (topic === "Inflation") return "bg-aqua";
   return "bg-gray-500";
 });
 </script>

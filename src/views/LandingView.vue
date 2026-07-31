@@ -15,10 +15,8 @@
       <p
         class="font-sans text-lg md:text-xl text-gray-200 leading-relaxed text-center max-w-2xl mx-auto"
       >
-        Join two curious friends as they explore the building blocks of money:
-        earning, saving, spending, and giving. Fin and Nance makes financial
-        literacy simple, friendly, and fun for young readers and the grown-ups
-        who read with them.
+        This wholesome chapter book series transforms financial literacy into a
+        lively, story-driven adventure for children aged 6–10.
       </p>
     </section>
 
@@ -27,16 +25,22 @@
       class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 soft-enter soft-enter-delay-2"
     >
       <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-ruby-400 mb-2">Fun Stories</div>
-        <div class="font-mono text-sm text-gray-400">Adventures kids want to read</div>
+        <div class="font-heading text-2xl font-bold text-terracotta mb-2">Adventure-Based Learning</div>
+        <div class="font-mono text-sm text-gray-100">
+          Join siblings Fin and Nance as they naturally discover saving, borrowing, bartering, and more.
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-torch-400 mb-2">Real Lessons</div>
-        <div class="font-mono text-sm text-gray-400">Ideas that last a lifetime</div>
+        <div class="font-heading text-2xl font-bold text-butter mb-2">Ideal Reading Format</div>
+        <div class="font-mono text-sm text-gray-100">
+          Perfect for independent reading or cherished family read-aloud time.
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-cobalt-400 mb-2">Big Hearts</div>
-        <div class="font-mono text-sm text-gray-400">Values of generosity and care</div>
+        <div class="font-heading text-2xl font-bold text-aqua mb-2">Bonus Learning Section</div>
+        <div class="font-mono text-sm text-gray-100">
+          Each book includes questions and lessons to spark meaningful conversations.
+        </div>
       </div>
     </section>
 
@@ -45,13 +49,13 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <router-link
           to="/books"
-          class="interactive-focus px-6 py-3 bg-sun-400 text-gray-950 hover:bg-sun-300 rounded-lg font-medium transition-colors duration-[230ms]"
+          class="interactive-focus px-6 py-3 bg-terracotta text-gray-950 hover:bg-terracotta-300 rounded-lg font-medium transition-colors duration-[230ms]"
         >
           Explore the Books
         </router-link>
         <router-link
           to="/about"
-          class="interactive-focus px-6 py-3 bg-gray-800 border-2 border-gray-600 text-gray-100 rounded-lg font-medium hover:border-cobalt-400 hover:bg-gray-800/90 transition-colors duration-[230ms]"
+          class="interactive-focus px-6 py-3 bg-sage border-2 border-butter text-gray-950 rounded-lg font-medium hover:border-aqua hover:bg-sage-300 transition-colors duration-[230ms]"
         >
           About the Author
         </router-link>

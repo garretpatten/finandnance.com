@@ -3,11 +3,11 @@
     <h1 tabindex="-1" class="sr-only outline-none">About the Author</h1>
 
     <div class="mb-8 soft-enter flex justify-center">
-      <div class="rounded-full bg-cobalt-400 p-[3px]">
-        <div class="rounded-full bg-gray-950 p-[3px]">
-          <div class="rounded-full bg-sun-400 p-[3px]">
-            <div class="rounded-full bg-gray-950 p-[3px]">
-              <div class="rounded-full bg-ruby-400 p-[3px]">
+      <div class="rounded-full bg-terracotta p-[3px]">
+        <div class="rounded-full bg-[#5f7d49] p-[3px]">
+          <div class="rounded-full bg-butter p-[3px]">
+            <div class="rounded-full bg-[#5f7d49] p-[3px]">
+              <div class="rounded-full bg-aqua p-[3px]">
                 <img
                   src="/assets/images/garret-patten.jpg"
                   alt="Maureen Patten"

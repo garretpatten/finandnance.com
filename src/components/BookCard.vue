@@ -4,18 +4,18 @@
   >
     <!-- Book cover -->
     <div class="flex justify-center py-6 mb-4">
+      <img
+        v-if="book.cover"
+        :src="book.cover"
+        :alt="`${book.title} cover`"
+        class="w-44 sm:w-52 h-auto rounded-lg shadow-xl"
+      />
       <div
+        v-else
         class="w-44 h-64 sm:w-52 sm:h-72 rounded-lg shadow-xl overflow-hidden"
-        :class="{ [coverClass]: !book.cover }"
+        :class="coverClass"
       >
-        <img
-          v-if="book.cover"
-          :src="book.cover"
-          :alt="`${book.title} cover`"
-          class="w-full h-full object-cover"
-        />
         <span
-          v-else
           class="font-heading text-base font-bold leading-tight flex items-center justify-center text-center p-4 w-full h-full"
         >
           {{ book.title }}

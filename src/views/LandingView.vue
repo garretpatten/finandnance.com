@@ -1,11 +1,11 @@
 <template>
   <div class="max-w-4xl mx-auto">
     <!-- Hero Section -->
-    <section class="text-center mb-16 soft-enter">
+    <section class="text-center mb-10 soft-enter">
       <h1 tabindex="-1" class="text-5xl md:text-6xl font-bold text-gray-100 mb-4 outline-none">
         Fin and Nance
       </h1>
-      <p class="font-sans text-xl md:text-2xl text-gray-300 mb-8">
+      <p class="font-sans text-xl md:text-2xl text-gray-300 mb-6">
         A children's book series on financial literacy
       </p>
       <img

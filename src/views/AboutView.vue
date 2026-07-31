@@ -3,20 +3,12 @@
     <h1 tabindex="-1" class="sr-only outline-none">About the Author</h1>
 
     <div class="mb-8 soft-enter flex justify-center">
-      <div class="rounded-full bg-terracotta p-[3px]">
-        <div class="rounded-full bg-[#5f7d49] p-[3px]">
-          <div class="rounded-full bg-butter p-[3px]">
-            <div class="rounded-full bg-[#5f7d49] p-[3px]">
-              <div class="rounded-full bg-aqua p-[3px]">
-                <img
-                  src="/assets/images/garret-patten.jpg"
-                  alt="Maureen Patten"
-                  class="block h-32 w-32 md:h-40 md:w-40 rounded-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="rounded-full bg-terracotta p-1.5">
+        <img
+          src="/assets/images/maureen-patten.jpg"
+          alt="Maureen Patten"
+          class="block h-32 w-32 md:h-40 md:w-40 rounded-full object-cover"
+        />
       </div>
     </div>
 

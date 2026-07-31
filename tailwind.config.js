@@ -12,8 +12,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
-        heading: ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Libre Baskerville"', ...defaultTheme.fontFamily.serif],
+        heading: ['"Libre Baskerville"', ...defaultTheme.fontFamily.serif],
         mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
       },
       colors: {

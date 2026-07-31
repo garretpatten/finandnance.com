@@ -5,9 +5,14 @@
       <h1 tabindex="-1" class="text-5xl md:text-6xl font-bold text-gray-100 mb-4 outline-none">
         Fin and Nance
       </h1>
-      <p class="font-sans text-xl md:text-2xl text-gray-300">
+      <p class="font-sans text-xl md:text-2xl text-gray-300 mb-8">
         A children's book series on financial literacy
       </p>
+      <img
+        src="/assets/images/fin-and-nance.png"
+        alt="Fin and Nance characters"
+        class="mx-auto w-full max-w-md"
+      />
     </section>
 
     <!-- Value Proposition -->

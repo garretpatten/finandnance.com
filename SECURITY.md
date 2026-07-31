@@ -1,26 +1,22 @@
-# Security policy
+# Security Policy
 
-## Supported scope
+## Supported versions
 
-Security fixes ship on the default branch (**`master`**). Consume this repository by pinning commits or forks for supply-chain control rather than blindly tracking **`master`** when that matters.
+| Version / branch | Supported          |
+| ------------------ | ------------------ |
+| `master` (latest)  | :white_check_mark: |
+| older deployments  | :x:                |
+
+Security fixes apply to the default branch and whatever is currently deployed at [finandnance.com](https://finandnance.com).
 
 ## Reporting a vulnerability
 
-Email **Garret Patten** at **<garret.patten@proton.me>** with:
+Report a vulnerability directly to the maintainer at [garret.patten@proton.me](mailto:garret.patten@proton.me). Do not open public GitHub issues for security-sensitive reports.
 
-- Brief description of impact and suspected component (script path, workflow, dependency, or config).
-- Whether you believe it is remotely exploitable and any proof-of-concept you can safely share.
+If a vulnerability is accepted, updates will be given on meaningful status changes. If a report is declined, brief reasoning will be provided.
 
-You should receive acknowledgement of receipt; substantive updates align with remediation progress. If a finding is declined, reasoning will be given.
+## Scope
 
-Do not open public GitHub issues for security-sensitive reports.
+This repository is a static marketing site (Vue + Vite, hosted on Cloudflare Pages). It has no server-side application code or user accounts. Still report issues that affect visitors—XSS, dependency vulnerabilities, misconfigured redirects, leaked secrets in the build or repo, or similar.
 
-### Out of scope without prior agreement
-
-- Social engineering against maintainers or users.
-- Physical access or already-compromised hosts.
-- Theoretical attacks without a plausible path through this repository's automation or artifacts (document gaps as issues instead).
-
-## Automated checks
-
-Pull requests run [Security Guardrails](https://github.com/garretpatten/security-guardrails) (OpenGrep SAST, verified TruffleHog secrets, dependency review, Trivy vulnerability and license scans) and [Quality Checks](https://github.com/garretpatten/quality-checks) linters. Do not commit secrets, credentials, or sensitive personal data.
+Do not commit secrets, credentials, or sensitive personal data. Pull requests run automated security checks (Semgrep, Trufflehog) via the [Security Guardrails](https://github.com/garretpatten/security-guardrails) workflow.

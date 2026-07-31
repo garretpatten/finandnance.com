@@ -1,0 +1,61 @@
+<template>
+  <div class="max-w-4xl mx-auto">
+    <!-- Hero Section -->
+    <section class="text-center mb-16 soft-enter">
+      <h1 tabindex="-1" class="text-5xl md:text-6xl font-bold text-gray-100 mb-4 outline-none">
+        Fin and Nance
+      </h1>
+      <p class="font-sans text-xl md:text-2xl text-gray-300">
+        A children's book series on financial literacy
+      </p>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="mb-16 soft-enter soft-enter-delay-1">
+      <p
+        class="font-sans text-lg md:text-xl text-gray-200 leading-relaxed text-center max-w-2xl mx-auto"
+      >
+        Join two curious friends as they explore the building blocks of money:
+        earning, saving, spending, and giving. Fin and Nance makes financial
+        literacy simple, friendly, and fun for young readers and the grown-ups
+        who read with them.
+      </p>
+    </section>
+
+    <!-- Key Highlights -->
+    <section
+      class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 soft-enter soft-enter-delay-2"
+    >
+      <div class="text-center">
+        <div class="font-heading text-3xl font-bold text-ruby-400 mb-2">Fun Stories</div>
+        <div class="font-mono text-sm text-gray-400">Adventures kids want to read</div>
+      </div>
+      <div class="text-center">
+        <div class="font-heading text-3xl font-bold text-torch-400 mb-2">Real Lessons</div>
+        <div class="font-mono text-sm text-gray-400">Ideas that last a lifetime</div>
+      </div>
+      <div class="text-center">
+        <div class="font-heading text-3xl font-bold text-cobalt-400 mb-2">Big Hearts</div>
+        <div class="font-mono text-sm text-gray-400">Values of generosity and care</div>
+      </div>
+    </section>
+
+    <!-- Calls to Action -->
+    <section class="text-center mb-16 soft-enter soft-enter-delay-2">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <router-link
+          to="/books"
+          class="interactive-focus px-6 py-3 bg-sun-400 text-gray-950 hover:bg-sun-300 rounded-lg font-medium transition-colors duration-[230ms]"
+        >
+          Explore the Books
+        </router-link>
+        <router-link
+          to="/about"
+          class="interactive-focus px-6 py-3 bg-gray-800 border-2 border-gray-600 text-gray-100 rounded-lg font-medium hover:border-cobalt-400 hover:bg-gray-800/90 transition-colors duration-[230ms]"
+        >
+          About the Author
+        </router-link>
+      </div>
+    </section>
+  </div>
+</template>

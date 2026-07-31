@@ -3,9 +3,9 @@
     class="flex flex-col rounded-xl border border-gray-700 bg-gray-900/90 p-6 transition-shadow duration-[230ms] hover:shadow-xl"
   >
     <!-- Book cover -->
-    <div class="flex justify-center mb-6">
+    <div class="flex justify-center py-6 mb-4">
       <div
-        class="w-44 h-64 sm:w-52 sm:h-72 rounded-lg shadow-lg overflow-hidden"
+        class="w-44 h-64 sm:w-52 sm:h-72 rounded-lg shadow-xl overflow-hidden"
         :class="{ [coverClass]: !book.cover }"
       >
         <img
@@ -29,22 +29,13 @@
         <h3 class="font-heading text-2xl font-bold text-gray-100 mb-2">
           {{ book.title }}
         </h3>
-        <div class="flex items-center justify-center gap-3">
-          <span
-            class="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium"
-            :class="statusBadgeClass"
-          >
-            {{ statusLabel }}
-          </span>
-          <span class="inline-flex items-center gap-1.5 text-sm text-gray-400">
-            <span
-              class="h-3 w-3 rounded-full"
-              :class="topicColorClass"
-              aria-hidden="true"
-            />
-            {{ book.topic }}
-          </span>
-        </div>
+        <span
+          v-if="book.status === 'in-production'"
+          class="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium"
+          :class="statusBadgeClass"
+        >
+          {{ statusLabel }}
+        </span>
       </div>
 
       <p class="font-sans text-gray-300 leading-relaxed mb-6 flex-1">
@@ -79,12 +70,6 @@
         >
           Coming soon
         </span>
-        <router-link
-          to="/about"
-          class="interactive-focus inline-flex items-center px-6 py-3 rounded-lg border border-butter text-butter font-medium hover:bg-butter-900/20 transition-colors duration-[230ms]"
-        >
-          About the author
-        </router-link>
       </div>
     </div>
   </article>
@@ -118,11 +103,5 @@ const coverClass = computed(() => {
   return "bg-gray-800 text-gray-100 border border-gray-700";
 });
 
-const topicColorClass = computed(() => {
-  const topic = props.book.topic;
-  if (topic === "Borrowing") return "bg-terracotta";
-  if (topic === "Money Management") return "bg-butter";
-  if (topic === "Inflation") return "bg-aqua";
-  return "bg-gray-500";
-});
+
 </script>

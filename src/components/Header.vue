@@ -9,7 +9,11 @@
         :aria-current="route.path === '/' ? 'page' : undefined"
         class="interactive-focus rounded-md hover:opacity-80 transition-opacity duration-[230ms]"
       >
-        <span class="font-heading text-xl font-bold text-gray-100">Fin and Nance</span>
+        <img
+          src="/apple-touch-icon.png"
+          alt="Fin and Nance"
+          class="h-20 w-auto"
+        />
       </router-link>
 
       <button
@@ -22,7 +26,7 @@
       >
         <svg
           aria-hidden="true"
-          class="w-8 h-8"
+          class="w-10 h-10"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -46,7 +50,11 @@
         :aria-current="route.path === '/' ? 'page' : undefined"
         class="interactive-focus rounded-md hover:opacity-80 transition-opacity duration-[230ms]"
       >
-        <span class="font-heading text-2xl font-bold text-gray-100">Fin and Nance</span>
+        <img
+          src="/apple-touch-icon.png"
+          alt="Fin and Nance"
+          class="h-24 w-auto"
+        />
       </router-link>
 
       <nav class="flex items-center gap-4" aria-label="Main">
@@ -74,7 +82,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-6 h-6"
+            class="w-8 h-8"
             fill="currentColor"
             :viewBox="social.viewBox ?? '0 0 24 24'"
             xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +125,7 @@
         >
           <svg
             aria-hidden="true"
-            class="w-7 h-7"
+            class="w-9 h-9"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -155,7 +163,7 @@
           >
             <svg
               aria-hidden="true"
-              class="w-7 h-7"
+              class="w-9 h-9"
               fill="currentColor"
               :viewBox="social.viewBox ?? '0 0 24 24'"
               xmlns="http://www.w3.org/2000/svg"
@@ -201,9 +209,9 @@ const socialLinks = [
 ];
 
 const desktopRouteClasses =
-  "text-md font-medium text-gray-100 transition-colors duration-[230ms] hover:text-cobalt-400";
+  "text-lg font-medium text-gray-100 transition-colors duration-[230ms] hover:text-cobalt-400";
 const mobileRouteClasses =
-  "text-xl font-medium transition-colors duration-[230ms] py-3 text-center w-full text-gray-100 hover:text-cobalt-400";
+  "text-2xl font-medium transition-colors duration-[230ms] py-3 text-center w-full text-gray-100 hover:text-cobalt-400";
 
 const getRouteStateClasses = (path) =>
   route.path === path ? "text-butter border-b-2 border-terracotta" : "";

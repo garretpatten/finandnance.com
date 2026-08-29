@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-3xl mx-2 sm:mx-auto">
     <h1 tabindex="-1" class="sr-only outline-none">About the Author</h1>
 
     <div class="mb-8 soft-enter flex justify-center">
@@ -7,18 +7,18 @@
         <img
           src="/assets/images/maureen-patten.jpg"
           alt="Maureen Patten"
-          class="block h-32 w-32 md:h-40 md:w-40 rounded-full object-cover"
+          class="block h-36 w-36 md:h-44 md:w-44 rounded-full object-cover"
         />
       </div>
     </div>
 
     <div class="max-w-none soft-enter soft-enter-delay-1">
-      <p class="font-sans text-gray-300 leading-relaxed mb-6">
+      <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
         Maureen Patten is the author and illustrator of the
         <em class="text-gray-100">Fin and Nance</em> children’s book series.
       </p>
 
-      <p class="font-sans text-gray-300 leading-relaxed mb-6">
+      <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
         Maureen brings together a background in finance and writing. She earned
         her degree in Economics and Finance from Wofford College and spent the
         next decade in commercial banking. As a Small Business Administration
@@ -33,7 +33,7 @@
         >, and later created content for the Foundation for Economic Education (FEE).
       </p>
 
-      <p class="font-sans text-gray-300 leading-relaxed mb-6">
+      <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
         Her
         <a
           href="https://fee.org/articles/4-ways-to-teach-kids-finance/"
@@ -46,19 +46,19 @@
         <em class="text-gray-100">Fin and Nance</em> series.
       </p>
 
-      <p class="font-sans text-gray-300 leading-relaxed mb-6">
+      <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
         Inspired by her time with her niece, nephews, and her own two children,
         she designed <em class="text-gray-100">Fin and Nance</em> to break down
         essential financial concepts into natural, story-driven lessons.
       </p>
 
-      <p class="font-sans text-gray-300 leading-relaxed mb-6">
+      <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
         Outside of her professional pursuits, she played Division 1 soccer and coached youth soccer teams.
         Maureen lives in Georgia with her husband, two children, and their
         beagle.
       </p>
 
-      <p class="font-sans text-gray-300 leading-relaxed">
+      <p class="font-sans text-lg text-gray-200 leading-relaxed">
         Explore the <em class="text-gray-100">Fin and Nance</em> series on
         <a
           href="https://www.amazon.com/dp/B0G5PMK92F"

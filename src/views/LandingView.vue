@@ -20,25 +20,19 @@
       <p
         class="font-sans text-lg md:text-xl text-gray-200 leading-relaxed text-center max-w-2xl mx-auto"
       >
-        This wholesome chapter book series transforms financial literacy into a
+        A wholesome chapter book series that transforms financial literacy into a
         lively, story-driven adventure for children aged 6–10.
       </p>
     </section>
 
     <!-- Key Highlights -->
     <section
-      class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 soft-enter soft-enter-delay-2"
+      class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 soft-enter soft-enter-delay-2"
     >
       <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-terracotta mb-2">Adventure-Based Learning</div>
+        <div class="font-heading text-3xl font-bold text-aqua mb-2">Adventure-Based Learning</div>
         <div class="font-mono text-md text-gray-100">
           Join siblings Fin and Nance as they naturally discover saving, borrowing, bartering, and more.
-        </div>
-      </div>
-      <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-butter mb-2">Ideal Reading Format</div>
-        <div class="font-mono text-md text-gray-100">
-          Perfect for independent reading or cherished family read-aloud time.
         </div>
       </div>
       <div class="text-center">
@@ -60,7 +54,7 @@
         </router-link>
         <router-link
           to="/about"
-          class="interactive-focus px-6 py-3 bg-sage border-2 border-butter text-gray-950 rounded-lg font-medium hover:border-aqua hover:bg-sage-300 transition-colors duration-[230ms]"
+          class="interactive-focus px-6 py-3 bg-butter text-gray-950 rounded-lg font-medium hover:bg-butter-300 transition-colors duration-[230ms]"
         >
           About the Author
         </router-link>

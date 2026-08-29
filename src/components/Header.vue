@@ -26,7 +26,7 @@
       >
         <svg
           aria-hidden="true"
-          class="w-10 h-10"
+          class="w-14 h-14"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

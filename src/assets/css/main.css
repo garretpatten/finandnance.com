@@ -28,12 +28,12 @@
 
   /* Site brand background — earthy green that keeps the warm foreground readable */
   html.dark {
-    background-color: #5f7d49;
+    background-color: #3E604C;
     color: #ebdbb2;
   }
 
   html.dark body {
-    background-color: #5f7d49;
+    background-color: #3E604C;
     color: inherit;
   }
 
@@ -41,7 +41,7 @@
   html.dark *,
   html.dark *::before,
   html.dark *::after {
-    --tw-ring-offset-color: #5f7d49;
+    --tw-ring-offset-color: #3E604C;
     --tw-ring-color: rgb(131 165 152 / 0.45);
   }
 }
@@ -73,7 +73,7 @@
 
   .interactive-focus:focus-visible {
     @apply ring-2 ring-cobalt-500 ring-offset-2;
-    --tw-ring-offset-color: #5f7d49;
+    --tw-ring-offset-color: #3E604C;
   }
 
   .soft-enter {

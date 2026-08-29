@@ -14,32 +14,46 @@
 
     <div class="max-w-none soft-enter soft-enter-delay-1">
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
-        Maureen Patten is the author of the
-        <em class="text-gray-100">Fin and Nance</em> children’s book series,
-        created to give 6- to 10-year-olds a clear, engaging head start on how
-        money actually works.
+        Maureen Patten is the author and illustrator of the
+        <em class="text-gray-100">Fin and Nance</em> children’s book series.
       </p>
 
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
-        A former Division I soccer player, Maureen earned her degree in Economics
-        from Wofford College before spending a decade in commercial banking. As a
-        Small Business Administration (SBA) lender, she evaluated loans,
-        collateral, and business strategies daily. That hands-on experience showed
-        her that complex economic principles—from bartering and interest rates to
-        how loans and collateral function—are far easier to navigate when
-        introduced early.
+        Maureen brings together a background in finance and writing. She earned
+        her degree in Economics and Finance from Wofford College and spent the
+        next decade in commercial banking. As a Small Business Administration
+        (SBA) lender, she evaluated loans, collateral, and business strategies
+        daily. She also published a
+        <a
+          href="https://www.jpands.org/vol19no3/buff.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-terracotta-300 hover:text-terracotta-100 underline underline-offset-4 transition-colors duration-[230ms]"
+          >paper in the Journal of American Physicians and Surgeons</a
+        >, and later created content for the Foundation for Economic Education (FEE).
       </p>
 
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
-        Inspired by her time with her nieces, nephews, and her own two children,
-        Maureen designed <em class="text-gray-100">Fin and Nance</em> to break down
-        essential financial concepts into natural, story-driven lessons. Her books
-        give parents, educators, and librarians an accessible bridge to start
-        meaningful financial conversations before money topics ever feel
-        intimidating.
+        Her
+        <a
+          href="https://fee.org/articles/4-ways-to-teach-kids-finance/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-iris-300 hover:text-iris-100 underline underline-offset-4 transition-colors duration-[230ms]"
+          >article on the need to teach children about finance</a
+        >
+        ultimately led her to write the
+        <em class="text-gray-100">Fin and Nance</em> series.
       </p>
 
       <p class="font-sans text-gray-300 leading-relaxed mb-6">
+        Inspired by her time with her niece, nephews, and her own two children,
+        she designed <em class="text-gray-100">Fin and Nance</em> to break down
+        essential financial concepts into natural, story-driven lessons.
+      </p>
+
+      <p class="font-sans text-gray-300 leading-relaxed mb-6">
+        Outside of her professional pursuits, she played Division 1 soccer and coached youth soccer teams.
         Maureen lives in Georgia with her husband, two children, and their
         beagle.
       </p>

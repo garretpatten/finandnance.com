@@ -188,6 +188,7 @@ const menuToggleRef = ref(null);
 const closeMenuRef = ref(null);
 
 const routes = [
+  { path: "/", name: "Home" },
   { path: "/about", name: "About the Author" },
   { path: "/books", name: "Books" },
 ];

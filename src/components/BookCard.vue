@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col rounded-xl border border-gray-700 bg-gray-900/90 p-6 transition-shadow duration-[230ms] hover:shadow-xl"
+    class="flex flex-col rounded-xl border border-gray-700 bg-gray-900/90 p-6 transition-shadow duration-[230ms] hover:shadow-xl md:max-w-xl md:mx-auto"
   >
     <!-- Book cover -->
     <div class="flex justify-center py-6 mb-4">

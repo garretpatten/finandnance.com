@@ -33,7 +33,7 @@ const books = ref([
     status: "available",
     cover: "/assets/images/little-borrowing-brother-cover.jpg",
     description:
-      "This wholesome chapter book—now in its revised second edition—transforms financial literacy into a lively, story-driven adventure for children aged 6–10. Young readers join siblings Fin and Nance as they discover why saving money matters, why borrowing isn't free, how loans and interest work, and how responsible choices strengthen character. Perfect for independent reading or family read-aloud time, the story blends humor, sibling teamwork, and real-world problem-solving. The fun continues with a bonus section that includes questions and lessons to deepen understanding and spark meaningful conversations.",
+      "Join siblings Fin and Nance as they discover why saving money matters, why borrowing isn't free, how loans and interest work, and how responsible choices strengthen character.",
     topic: "Borrowing",
     buyLink: "https://www.amazon.com/gp/product/0960000755?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks",
   },
@@ -42,7 +42,7 @@ const books = ref([
     status: "available",
     cover: "/assets/images/no-money-monday-cover.jpg",
     description:
-      "This wholesome chapter book—now in its revised second edition—transforms financial literacy into a lively, story-driven adventure for children aged 6–10. Young readers join siblings Fin and Nance as they discover why money exists, why bartering is challenging, and how responsible choices strengthen character. Perfect for independent reading or family read-aloud time, the story blends humor, sibling teamwork, and real-world problem-solving. The fun continues with a bonus section that includes questions and lessons to deepen understanding and spark meaningful conversations.",
+      "Join siblings Fin and Nance as they discover why money exists, why bartering is challenging, and how responsible choices strengthen character.",
     topic: "Money Management",
     buyLink: "https://www.amazon.com/gp/product/0960000763?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks",
   },

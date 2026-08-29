@@ -3,16 +3,16 @@
     class="flex flex-col rounded-xl border border-gray-700 bg-gray-900/90 p-6 transition-shadow duration-[230ms] hover:shadow-xl md:max-w-2xl md:mx-auto"
   >
     <!-- Book cover -->
-    <div class="flex justify-center py-6 mb-4">
+    <div class="flex justify-center py-8 mb-2">
       <img
         v-if="book.cover"
         :src="book.cover"
         :alt="`${book.title} cover`"
-        class="w-52 sm:w-60 h-auto rounded-lg shadow-xl"
+        class="w-60 sm:w-72 h-auto rounded-lg shadow-xl"
       />
       <div
         v-else
-        class="w-52 h-72 sm:w-60 sm:h-80 rounded-lg shadow-xl overflow-hidden"
+        class="w-60 h-80 sm:w-72 sm:h-96 rounded-lg shadow-xl overflow-hidden"
         :class="coverClass"
       >
         <span
@@ -25,7 +25,7 @@
 
     <!-- Book details -->
     <div class="flex flex-col text-center flex-1">
-      <div class="mb-4">
+      <div class="mb-2">
         <h3 class="font-heading text-2xl font-bold text-gray-100 mb-2">
           {{ book.title }}
         </h3>
@@ -38,7 +38,7 @@
         </span>
       </div>
 
-      <p class="font-sans text-gray-300 leading-relaxed mb-6 flex-1">
+      <p class="font-sans text-gray-300 leading-snug mb-4 flex-1">
         {{ book.description }}
       </p>
 

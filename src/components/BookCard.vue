@@ -1,6 +1,6 @@
 <template>
   <article
-    class="flex flex-col rounded-xl border border-gray-700 bg-gray-900/90 p-6 transition-shadow duration-[230ms] hover:shadow-xl md:max-w-xl md:mx-auto"
+    class="flex flex-col rounded-xl border border-gray-700 bg-gray-900/90 p-6 transition-shadow duration-[230ms] hover:shadow-xl md:max-w-2xl md:mx-auto"
   >
     <!-- Book cover -->
     <div class="flex justify-center py-6 mb-4">
@@ -8,11 +8,11 @@
         v-if="book.cover"
         :src="book.cover"
         :alt="`${book.title} cover`"
-        class="w-44 sm:w-52 h-auto rounded-lg shadow-xl"
+        class="w-52 sm:w-60 h-auto rounded-lg shadow-xl"
       />
       <div
         v-else
-        class="w-44 h-64 sm:w-52 sm:h-72 rounded-lg shadow-xl overflow-hidden"
+        class="w-52 h-72 sm:w-60 sm:h-80 rounded-lg shadow-xl overflow-hidden"
         :class="coverClass"
       >
         <span

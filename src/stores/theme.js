@@ -21,7 +21,6 @@ export const useThemeStore = defineStore("theme", () => {
   };
 
   return {
-    isDark,
     initTheme,
   };
 });

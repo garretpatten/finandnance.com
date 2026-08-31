@@ -19,43 +19,34 @@
       </p>
 
       <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
-        Maureen brings together a background in finance and writing. She earned
-        her degree in Economics and Finance from Wofford College and spent the
-        next decade in commercial banking. As a Small Business Administration
-        (SBA) lender, she evaluated loans, collateral, and business strategies
-        daily. She also published a
+        Maureen earned her degree in Economics and Finance from Wofford College
+        and spent the next decade in commercial banking. She published a
         <a
           href="https://www.jpands.org/vol19no3/buff.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="text-terracotta-300 hover:text-terracotta-100 underline underline-offset-4 transition-colors duration-[230ms]"
           >paper in the Journal of American Physicians and Surgeons</a
-        >, and later created content for the Foundation for Economic Education (FEE).
-      </p>
-
-      <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
-        Her
+        >, and later created
         <a
           href="https://fee.org/articles/4-ways-to-teach-kids-finance/"
           target="_blank"
           rel="noopener noreferrer"
           class="text-iris-300 hover:text-iris-100 underline underline-offset-4 transition-colors duration-[230ms]"
-          >article on the need to teach children about finance</a
-        >
-        ultimately led her to write the
-        <em class="text-gray-100">Fin and Nance</em> series.
+          >content for the Foundation for Economic Education (FEE)</a
+        >.
       </p>
 
       <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
-        Inspired by her time with her niece, nephews, and her own two children,
-        she designed <em class="text-gray-100">Fin and Nance</em> to break down
-        essential financial concepts into natural, story-driven lessons.
+        Inspired by her time volunteering at elementary schools, she wrote the
+        <em class="text-gray-100">Fin and Nance</em> series after noticing a gap
+        in financial literacy.
       </p>
 
       <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">
-        Outside of her professional pursuits, she played Division 1 soccer and coached youth soccer teams.
-        Maureen lives in Georgia with her husband, two children, and their
-        beagle.
+        Outside of her professional pursuits, she played Division I soccer and
+        coached youth soccer teams. Maureen lives in Georgia with her husband,
+        two children, and their beagle.
       </p>
 
       <p class="font-sans text-lg text-gray-200 leading-relaxed">

@@ -29,16 +29,9 @@
         <h3 class="font-heading text-2xl font-bold text-gray-100 mb-2">
           {{ book.title }}
         </h3>
-        <span
-          v-if="book.status === 'in-production'"
-          class="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium"
-          :class="statusBadgeClass"
-        >
-          {{ statusLabel }}
-        </span>
       </div>
 
-      <p class="font-sans text-gray-300 leading-snug mb-4 flex-1">
+      <p class="font-sans text-gray-300 leading-snug mb-4 flex-1 whitespace-pre-wrap">
         {{ book.description }}
       </p>
 
@@ -68,7 +61,7 @@
           v-else-if="book.status === 'in-production'"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-gray-700 text-gray-400 font-medium"
         >
-          Coming soon
+          Coming Soon!
         </span>
       </div>
     </div>
@@ -85,23 +78,11 @@ const props = defineProps({
   },
 });
 
-const statusLabel = computed(() =>
-  props.book.status === "in-production" ? "In Production" : "Available",
-);
-
-const statusBadgeClass = computed(() =>
-  props.book.status === "in-production"
-    ? "bg-terracotta-900/40 text-terracotta-100 border border-terracotta-700"
-    : "bg-sage-900/40 text-sage-100 border border-sage-700",
-);
-
 const coverClass = computed(() => {
   const topic = props.book.topic;
   if (topic === "Borrowing") return "bg-terracotta-900/60 text-terracotta-100 border border-terracotta-700";
   if (topic === "Money Management") return "bg-butter-900/60 text-butter-100 border border-butter-700";
-  if (topic === "Inflation") return "bg-aqua-900/60 text-aqua-900 border border-aqua-700";
+  if (topic === "Inflation") return "bg-aqua-900/60 text-aqua-100 border border-aqua-700";
   return "bg-gray-800 text-gray-100 border border-gray-700";
 });
-
-
 </script>

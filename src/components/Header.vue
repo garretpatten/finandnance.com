@@ -10,7 +10,7 @@
         class="interactive-focus rounded-md hover:opacity-80 transition-opacity duration-[230ms]"
       >
         <img
-          src="/apple-touch-icon.png"
+          src="/assets/images/coin.png"
           alt="Fin and Nance"
           class="h-20 w-auto"
         />
@@ -51,7 +51,7 @@
         class="interactive-focus rounded-md hover:opacity-80 transition-opacity duration-[230ms]"
       >
         <img
-          src="/apple-touch-icon.png"
+          src="/assets/images/coin.png"
           alt="Fin and Nance"
           class="h-24 w-auto"
         />

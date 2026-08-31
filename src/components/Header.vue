@@ -189,8 +189,8 @@ const closeMenuRef = ref(null);
 
 const routes = [
   { path: "/", name: "Home" },
-  { path: "/about", name: "About the Author" },
   { path: "/books", name: "Books" },
+  { path: "/about", name: "About the Author" },
 ];
 
 const socialLinks = [

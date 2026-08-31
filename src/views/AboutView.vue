@@ -26,15 +26,15 @@
           target="_blank"
           rel="noopener noreferrer"
           class="text-terracotta-300 hover:text-terracotta-100 underline underline-offset-4 transition-colors duration-[230ms]"
-          >paper in the Journal of American Physicians and Surgeons</a
-        >, and later created
+          >paper</a
+        > in the Journal of American Physicians and Surgeons and later created
         <a
           href="https://fee.org/articles/4-ways-to-teach-kids-finance/"
           target="_blank"
           rel="noopener noreferrer"
           class="text-iris-300 hover:text-iris-100 underline underline-offset-4 transition-colors duration-[230ms]"
-          >content for the Foundation for Economic Education (FEE)</a
-        >.
+          >content</a
+        > for the Foundation for Economic Education (FEE).
       </p>
 
       <p class="font-sans text-lg text-gray-200 leading-relaxed mb-6">

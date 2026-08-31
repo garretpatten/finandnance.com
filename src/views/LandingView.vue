@@ -6,41 +6,14 @@
         Fin & Nance
       </h1>
       <p class="font-sans text-xl md:text-2xl text-gray-300 mb-6">
-        Fun stories that teach kids finance
+        A wholesome chapter book series that turns financial literacy into a
+        story-driven adventure for children aged 6–10.
       </p>
       <img
         src="/assets/images/fin-and-nance.png"
         alt="Fin and Nance characters"
         class="mx-auto w-full max-w-[480px]"
       />
-    </section>
-
-    <!-- Value Proposition -->
-    <section class="mb-16 soft-enter soft-enter-delay-1">
-      <p
-        class="font-sans text-lg md:text-xl text-gray-200 leading-relaxed text-center max-w-2xl mx-auto"
-      >
-        A wholesome chapter book series that transforms financial literacy into a
-        lively, story-driven adventure for children aged 6–10.
-      </p>
-    </section>
-
-    <!-- Key Highlights -->
-    <section
-      class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 soft-enter soft-enter-delay-2"
-    >
-      <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-aqua mb-2">Adventure-Based Learning</div>
-        <div class="font-mono text-md text-gray-100">
-          Join siblings Fin and Nance as they naturally discover saving, borrowing, bartering, and more.
-        </div>
-      </div>
-      <div class="text-center">
-        <div class="font-heading text-3xl font-bold text-aqua mb-2">Bonus Learning Section</div>
-        <div class="font-mono text-md text-gray-100">
-          Each book includes questions and lessons to spark meaningful conversations.
-        </div>
-      </div>
     </section>
 
     <!-- Calls to Action -->

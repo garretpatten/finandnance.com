@@ -4,7 +4,7 @@ Marketing site for the *Fin and Nance* children's book series on financial liter
 
 ## Commands
 
-Requires Node.js **20.19+** or **22.12+** (see `.nvmrc` / `package.json` engines).
+Requires Node.js **24+** (see `.nvmrc` / `package.json` engines).
 
 ```bash
 npm install

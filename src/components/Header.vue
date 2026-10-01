@@ -146,7 +146,7 @@
             :key="navRoute.path"
             :to="navRoute.path"
             :aria-current="route.path === navRoute.path ? 'page' : undefined"
-            @click="closeMenu(false)"
+            @click="closeMenu"
             :class="[mobileRouteClasses, getRouteStateClasses(navRoute.path), 'interactive-focus']"
           >
             {{ navRoute.name }}
@@ -267,13 +267,11 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
 
-const closeMenu = (restoreFocus = true) => {
+const closeMenu = () => {
   isMenuOpen.value = false;
-  if (restoreFocus) {
-    nextTick(() => {
-      menuToggleRef.value?.focus();
-    });
-  }
+  nextTick(() => {
+    menuToggleRef.value?.focus();
+  });
 };
 
 watch(isMenuOpen, async (open) => {
@@ -291,11 +289,7 @@ onUnmounted(() => {
 watch(
   () => route.path,
   () => {
-    // Route changes announce themselves and move focus to main content,
-    // so the menu is dismissed without restoring focus to the toggle.
-    if (isMenuOpen.value) {
-      isMenuOpen.value = false;
-    }
+    closeMenu();
   },
 );
 </script>

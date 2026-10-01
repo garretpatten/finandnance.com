@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-4xl mx-auto">
-    <h1 tabindex="-1" class="sr-only outline-none">Books</h1>
+    <h1 class="sr-only">Books</h1>
 
     <section aria-labelledby="store-heading" class="soft-enter">
       <div class="text-center mb-10">

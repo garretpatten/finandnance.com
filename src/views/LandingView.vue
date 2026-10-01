@@ -2,7 +2,7 @@
   <div class="max-w-4xl mx-auto">
     <!-- Hero Section -->
     <section class="text-center mb-10 soft-enter">
-      <h1 tabindex="-1" class="text-5xl md:text-6xl font-bold text-gray-100 mb-4 outline-none">
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-100 mb-4">
         Fin & Nance
       </h1>
       <p class="font-sans text-xl md:text-2xl text-gray-100 mb-6">

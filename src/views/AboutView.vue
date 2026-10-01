@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-3xl mx-2 sm:mx-auto">
-    <h1 tabindex="-1" class="sr-only outline-none">About the Author</h1>
+    <h1 class="sr-only">About the Author</h1>
 
     <div class="mb-8 soft-enter flex justify-center">
       <div class="rounded-full bg-terracotta p-1.5">

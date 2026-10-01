@@ -1,32 +1,25 @@
-import { ref, watch, nextTick } from "vue";
+import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
 
 /**
- * Announces route changes for screen readers and moves focus to the page heading.
+ * Keeps the document title in sync with the route and announces page loads
+ * through an aria-live region. Focus management for view changes lives in
+ * App.vue — which deliberately does not move focus: the header persists
+ * across views, so the activated nav link keeps focus after the new view
+ * renders, and the skip link is the only path that focuses `#main-content`.
  */
 export function useRouteAnnouncer() {
   const route = useRoute();
   const announcement = ref("");
 
-  const updatePageMeta = async (to) => {
-    const pageTitle = to.meta?.title ?? to.name ?? "Page";
-    document.title =
-      to.path === "/" ? "Fin and Nance" : `${pageTitle} — Fin and Nance`;
-    announcement.value = `${pageTitle} page loaded`;
-
-    await nextTick();
-    const main = document.getElementById("main-content");
-    const heading = main?.querySelector("h1");
-    if (heading instanceof HTMLElement) {
-      heading.focus({ preventScroll: true });
-    } else if (main instanceof HTMLElement) {
-      main.focus({ preventScroll: true });
-    }
-  };
-
   watch(
     () => route.fullPath,
-    () => updatePageMeta(route),
+    () => {
+      const pageTitle = route.meta?.title ?? route.name ?? "Page";
+      document.title =
+        route.path === "/" ? "Fin and Nance" : `${pageTitle} — Fin and Nance`;
+      announcement.value = `${pageTitle} page loaded`;
+    },
     { immediate: true },
   );
 

@@ -104,9 +104,8 @@
     ></div>
   </Transition>
 
-  <!-- Mobile Menu: Navigation Links -->
   <Transition name="menu">
-    <nav
+    <div
       v-if="isMenuOpen"
       ref="mobileMenuRef"
       role="dialog"
@@ -115,65 +114,67 @@
       class="fixed top-0 right-0 h-screen w-72 max-w-[85vw] bg-gray-900 shadow-xl z-40 md:hidden overflow-y-auto border-l border-gray-700"
       @keydown="handleMobileMenuKeydown"
     >
-      <div class="flex justify-end p-4">
-        <button
-          ref="closeMenuRef"
-          type="button"
-          @click="closeMenu"
-          class="p-2 text-gray-100 hover:text-cobalt-400 interactive-focus rounded-md transition-colors duration-[230ms] interactive-lift"
-          aria-label="Close menu"
-        >
-          <svg
-            aria-hidden="true"
-            class="w-9 h-9"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-col items-center gap-4 px-6 pb-6">
-        <router-link
-          v-for="navRoute in routes"
-          :key="navRoute.path"
-          :to="navRoute.path"
-          :aria-current="route.path === navRoute.path ? 'page' : undefined"
-          @click="closeMenu"
-          :class="[mobileRouteClasses, getRouteStateClasses(navRoute.path), 'interactive-focus']"
-        >
-          {{ navRoute.name }}
-        </router-link>
-        <div class="pt-2 w-full flex justify-center items-center gap-4">
-          <a
-            v-for="social in socialLinks"
-            :key="social.label"
-            :href="social.href"
-            target="_blank"
-            rel="noopener noreferrer"
-            :aria-label="`${social.label} (opens in new tab)`"
-            class="interactive-focus inline-flex items-center justify-center rounded-md text-cobalt hover:text-torch-400 transition-colors duration-[230ms]"
+      <nav aria-label="Mobile" class="flex flex-col h-full">
+        <div class="flex justify-end p-4">
+          <button
+            ref="closeMenuRef"
+            type="button"
+            @click="closeMenu"
+            class="p-2 text-gray-100 hover:text-cobalt-400 interactive-focus rounded-md transition-colors duration-[230ms] interactive-lift"
+            aria-label="Close menu"
           >
             <svg
               aria-hidden="true"
-              class="w-9 h-9 align-middle"
-              fill="currentColor"
-              :viewBox="social.viewBox ?? '0 0 24 24'"
+              class="w-9 h-9"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path :d="social.iconPath" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
-          </a>
+          </button>
         </div>
-      </div>
-    </nav>
+        <div class="flex flex-col items-center gap-4 px-6 pb-6">
+          <router-link
+            v-for="navRoute in routes"
+            :key="navRoute.path"
+            :to="navRoute.path"
+            :aria-current="route.path === navRoute.path ? 'page' : undefined"
+            @click="closeMenu"
+            :class="[mobileRouteClasses, getRouteStateClasses(navRoute.path), 'interactive-focus']"
+          >
+            {{ navRoute.name }}
+          </router-link>
+          <div class="pt-2 w-full flex justify-center items-center gap-4">
+            <a
+              v-for="social in socialLinks"
+              :key="social.label"
+              :href="social.href"
+              target="_blank"
+              rel="noopener noreferrer"
+              :aria-label="`${social.label} (opens in new tab)`"
+              class="interactive-focus inline-flex items-center justify-center rounded-md text-cobalt hover:text-torch-400 transition-colors duration-[230ms]"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-9 h-9 align-middle"
+                fill="currentColor"
+                :viewBox="social.viewBox ?? '0 0 24 24'"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path :d="social.iconPath" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </Transition>
 </template>
 

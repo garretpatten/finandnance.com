@@ -31,7 +31,7 @@
         </h3>
       </div>
 
-      <p class="font-sans text-gray-300 leading-snug mb-4 flex-1 whitespace-pre-wrap">
+      <p class="font-sans text-gray-100 leading-snug mb-4 flex-1 whitespace-pre-wrap">
         {{ book.description }}
       </p>
 

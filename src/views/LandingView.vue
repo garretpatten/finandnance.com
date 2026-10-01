@@ -5,7 +5,7 @@
       <h1 tabindex="-1" class="text-5xl md:text-6xl font-bold text-gray-100 mb-4 outline-none">
         Fin & Nance
       </h1>
-      <p class="font-sans text-xl md:text-2xl text-gray-300 mb-6">
+      <p class="font-sans text-xl md:text-2xl text-gray-100 mb-6">
         A wholesome chapter book series that turns financial literacy into a
         story-driven adventure for children aged 6–10.
       </p>

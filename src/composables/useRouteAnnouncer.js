@@ -2,7 +2,7 @@ import { ref, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
 
 /**
- * Announces route changes for screen readers and moves focus to the page heading.
+ * Announces route changes for screen readers and moves focus to main content.
  */
 export function useRouteAnnouncer() {
   const route = useRoute();
@@ -16,10 +16,7 @@ export function useRouteAnnouncer() {
 
     await nextTick();
     const main = document.getElementById("main-content");
-    const heading = main?.querySelector("h1");
-    if (heading instanceof HTMLElement) {
-      heading.focus({ preventScroll: true });
-    } else if (main instanceof HTMLElement) {
+    if (main instanceof HTMLElement) {
       main.focus({ preventScroll: true });
     }
   };

@@ -45,6 +45,11 @@ build/Release
 node_modules/
 jspm_packages/
 
+# A11y audit output
+a11y/results/
+test-results/
+playwright-report/
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 

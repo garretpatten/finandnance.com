@@ -1,6 +1,6 @@
 # finandnance.com — Agent Instructions
 
-Marketing site for the *Fin and Nance* children's book series on financial literacy ([finandnance.com](https://finandnance.com)). Vue 3 + Vite + Tailwind CSS, deployed to Cloudflare Pages.
+Marketing site for the _Fin and Nance_ children's book series on financial literacy ([finandnance.com](https://finandnance.com)). Vue 3 + Vite + Tailwind CSS, deployed to Cloudflare Pages.
 
 ## Commands
 
@@ -11,9 +11,13 @@ npm install
 npm run dev      # local dev server
 npm run build    # production build → dist/
 npm run preview  # preview production build
+npm test         # unit tests (Vitest, single run)
+npm run test:unit:watch     # unit tests in watch mode
+npm run test:unit:coverage  # unit tests with V8 coverage
+npm run test:a11y           # axe-core/Playwright accessibility audit
 ```
 
-There is no test script. Verify changes manually in the browser after `npm run dev` or `npm run preview`.
+Unit tests (Vitest + `@vue/test-utils` + jsdom) live in `src/**/__tests__/`. Run them after changes; PRs are gated on them via `.github/workflows/unit-tests.yaml`. Verify visual changes manually in the browser after `npm run dev` or `npm run preview`.
 
 ## Project layout
 
@@ -38,6 +42,7 @@ Path alias: `@` → `src/` (see `vite.config.js`).
 - **Pinia** for shared state. `useThemeStore` in `src/stores/theme.js` keeps **`dark`** on `<html>` — the UI is **Gruvbox Dark Hard only** (system light mode is ignored).
 - **Tailwind CSS** for styling. Prefer utility classes in templates; shared motion/UI patterns live in `src/assets/css/main.css` (`@layer components` / `@layer utilities`).
 - **@vueuse/core** where composables help.
+- **Vitest** (`vitest.config.js`, jsdom + `@vue/test-utils`) for unit tests under `src/**/__tests__/`. Gate PRs via `.github/workflows/unit-tests.yaml`.
 
 Reuse existing components (`BookCard`, etc.) before adding new abstractions.
 

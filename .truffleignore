@@ -4,4 +4,4 @@ build/
 coverage/
 package-lock.json
 .*\.min\.js
-*.snap
+.*\.snap

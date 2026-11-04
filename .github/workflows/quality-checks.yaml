@@ -22,4 +22,5 @@ jobs:
       shellcheck_run: true
       taplo_run: true
       yamllint_run: true
-    secrets: inherit
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}

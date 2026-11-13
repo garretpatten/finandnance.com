@@ -1,5 +1,8 @@
 # Fin and Nance
 
+[![License: MIT](https://img.shields.io/github/license/garretpatten/finandnance.com?style=flat-square)](./LICENSE)
+[![Tests](https://img.shields.io/github/actions/workflow/status/garretpatten/finandnance.com/unit-tests.yaml?branch=master&label=tests&logo=github&style=flat-square)](https://github.com/garretpatten/finandnance.com/actions/workflows/unit-tests.yaml)
+
 ![Fin and Nance hero](public/assets/images/fin-and-nance.png)
 
 > A children's book series that makes money lessons simple, friendly, and fun.

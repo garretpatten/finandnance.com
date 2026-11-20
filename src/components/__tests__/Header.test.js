@@ -1,4 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { mount } from "@vue/test-utils";
 import { createMemoryHistory, createRouter } from "vue-router";
 import Header from "../Header.vue";
@@ -37,6 +39,23 @@ describe("Header", () => {
     expect(nav.text()).toContain("About the Author");
     expect(wrapper.findAll('a[href*="amazon.com"]')).toHaveLength(1);
     expect(wrapper.findAll('a[href*="instagram.com"]')).toHaveLength(1);
+
+    const amazonLink = wrapper.find('a[href*="amazon.com"]');
+    expect(amazonLink.attributes("aria-label")).toBe(
+      "Amazon (opens in new tab)",
+    );
+    expect(amazonLink.attributes("target")).toBe("_blank");
+    expect(amazonLink.attributes("rel")).toBe("noopener noreferrer");
+    expect(amazonLink.attributes("title")).toBeUndefined();
+
+    const emailLink = wrapper.find(
+      'a[href="mailto:maureen@finandnance.com"]',
+    );
+    expect(emailLink.exists()).toBe(true);
+    expect(emailLink.attributes("aria-label")).toBe("Email the author");
+    expect(emailLink.attributes("title")).toBe("Email the author");
+    expect(emailLink.attributes("target")).toBeUndefined();
+    expect(emailLink.attributes("rel")).toBeUndefined();
   });
 
   it("marks the active desktop link with aria-current", async () => {
@@ -72,6 +91,28 @@ describe("Header", () => {
     await wrapper.find('button[aria-label="Close menu"]').trigger("click");
     expect(document.body.style.overflow).toBe("");
     expect(wrapper.find('[role="dialog"]').exists()).toBe(false);
+  });
+
+  it("renders the email link in the mobile menu without a new-tab target", async () => {
+    const { wrapper } = await mountHeader();
+
+    await wrapper.find('button[aria-label="Open menu"]').trigger("click");
+
+    const emailLink = wrapper.find(
+      '[role="dialog"] a[href="mailto:maureen@finandnance.com"]',
+    );
+    expect(emailLink.exists()).toBe(true);
+    expect(emailLink.attributes("aria-label")).toBe("Email the author");
+    expect(emailLink.attributes("title")).toBe("Email the author");
+    expect(emailLink.attributes("target")).toBeUndefined();
+    expect(emailLink.attributes("rel")).toBeUndefined();
+  });
+
+  it("does not store the raw email address in the component source", () => {
+    const source = readFileSync(resolve("src/components/Header.vue"), "utf8");
+
+    expect(source).not.toMatch(/maureen@finandnance\.com/i);
+    expect(source).not.toContain("mailto:maureen");
   });
 
   it("closes the menu on Escape", async () => {

@@ -5,7 +5,7 @@ import { mount } from "@vue/test-utils";
 import { createMemoryHistory, createRouter } from "vue-router";
 import Header from "../Header.vue";
 
-const buildRouter = (initialPath = "/") =>
+const buildRouter = () =>
   createRouter({
     history: createMemoryHistory(),
     routes: [

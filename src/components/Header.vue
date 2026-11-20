@@ -17,12 +17,12 @@
       </router-link>
 
       <button
-        ref="menuToggleRef"
         v-show="!isMenuOpen"
-        @click="toggleMenu"
+        ref="menuToggleRef"
         class="p-2 text-gray-100 hover:text-cobalt-400 interactive-focus rounded-md transition-colors duration-[230ms] relative z-50 interactive-lift"
         aria-label="Open menu"
         :aria-expanded="isMenuOpen"
+        @click="toggleMenu"
       >
         <svg
           aria-hidden="true"
@@ -99,13 +99,15 @@
   <Transition name="backdrop">
     <div
       v-if="isMenuOpen"
-      @click="closeMenu"
+      role="presentation"
       class="fixed inset-0 bg-gray-950/75 backdrop-blur-md z-30 md:hidden"
       aria-hidden="true"
+      @click="closeMenu"
     ></div>
   </Transition>
 
   <Transition name="menu">
+    <!-- eslint-disable-next-line vuejs-accessibility/no-static-element-interactions (modal dialog keydown trap; focus lives on close button) -->
     <div
       v-if="isMenuOpen"
       ref="mobileMenuRef"
@@ -120,9 +122,9 @@
           <button
             ref="closeMenuRef"
             type="button"
-            @click="closeMenu"
             class="p-2 text-gray-100 hover:text-cobalt-400 interactive-focus rounded-md transition-colors duration-[230ms] interactive-lift"
             aria-label="Close menu"
+            @click="closeMenu"
           >
             <svg
               aria-hidden="true"
@@ -147,8 +149,8 @@
             :key="navRoute.path"
             :to="navRoute.path"
             :aria-current="route.path === navRoute.path ? 'page' : undefined"
-            @click="closeMenu"
             :class="[mobileRouteClasses, getRouteStateClasses(navRoute.path), 'interactive-focus']"
+            @click="closeMenu"
           >
             {{ navRoute.name }}
           </router-link>

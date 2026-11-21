@@ -10,8 +10,11 @@
         story-driven adventure for children aged 6–10.
       </p>
       <img
-        src="/assets/images/fin-and-nance.png"
+        src="/assets/images/fin-and-nance.webp"
         alt="Fin and Nance characters"
+        width="960"
+        height="790"
+        decoding="async"
         class="mx-auto w-full max-w-[480px]"
       />
     </section>

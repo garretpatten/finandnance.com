@@ -1,5 +1,8 @@
 <template>
-  <header class="mb-8 pb-6 relative z-20 px-4 py-3">
+  <header
+    :inert="isMenuOpen || undefined"
+    class="mb-8 pb-6 relative z-20 px-4 py-3"
+  >
     <!-- Mobile Header: Logo and Hamburger -->
     <div class="flex items-center justify-between md:hidden">
       <router-link
@@ -189,12 +192,26 @@
 <script setup>
 import { ref, watch, onUnmounted, nextTick } from "vue";
 import { useRoute } from "vue-router";
+import { storeToRefs } from "pinia";
+import { useMediaQuery } from "@vueuse/core";
+import { useMenuStore } from "../stores/menu";
 
 const route = useRoute();
-const isMenuOpen = ref(false);
+const menuStore = useMenuStore();
+const { isOpen: isMenuOpen } = storeToRefs(menuStore);
 const mobileMenuRef = ref(null);
 const menuToggleRef = ref(null);
 const closeMenuRef = ref(null);
+
+/* Close the dialog if the viewport grows past md while it is open;
+   the menu UI is hidden at that width, so leaving it open would lock
+   body scroll and trap focus in a hidden dialog. */
+const isDesktopViewport = useMediaQuery("(min-width: 768px)");
+watch(isDesktopViewport, (isDesktop) => {
+  if (isDesktop) {
+    menuStore.close();
+  }
+});
 
 const routes = [
   { path: "/", name: "Home" },
@@ -283,11 +300,11 @@ const handleMobileMenuKeydown = (event) => {
 };
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
+  menuStore.toggle();
 };
 
 const closeMenu = () => {
-  isMenuOpen.value = false;
+  menuStore.close();
   nextTick(() => {
     menuToggleRef.value?.focus();
   });

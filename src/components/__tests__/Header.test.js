@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { mount } from "@vue/test-utils";
+import { createPinia } from "pinia";
 import { createMemoryHistory, createRouter } from "vue-router";
 import Header from "../Header.vue";
 
@@ -20,7 +21,9 @@ const mountHeader = async (initialPath = "/") => {
   await router.push(initialPath);
   await router.isReady();
 
-  const wrapper = mount(Header, { global: { plugins: [router] } });
+  const wrapper = mount(Header, {
+    global: { plugins: [router, createPinia()] },
+  });
   return { wrapper, router };
 };
 
@@ -80,6 +83,18 @@ describe("Header", () => {
     const toggle = wrapper.find('button[aria-label="Open menu"]');
     expect(toggle.attributes("aria-expanded")).toBe("true");
     expect(document.body.style.overflow).toBe("hidden");
+  });
+
+  it("marks the page header inert while the mobile menu is open", async () => {
+    const { wrapper } = await mountHeader();
+
+    expect(wrapper.find("header").attributes("inert")).toBeUndefined();
+
+    await wrapper.find('button[aria-label="Open menu"]').trigger("click");
+    expect(wrapper.find("header").attributes("inert")).toBeDefined();
+
+    await wrapper.find('button[aria-label="Close menu"]').trigger("click");
+    expect(wrapper.find("header").attributes("inert")).toBeUndefined();
   });
 
   it("labels the mobile menu close button and restores scroll on close", async () => {

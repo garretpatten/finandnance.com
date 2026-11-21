@@ -56,7 +56,7 @@
       <p class="font-sans text-lg text-gray-100 leading-relaxed">
         Explore the <em class="text-gray-100">Fin and Nance</em> series on
         <a
-          href="https://www.amazon.com/dp/B0G5PMK92F"
+          :href="AMAZON_BOOK_URL"
           target="_blank"
           rel="noopener noreferrer"
           class="text-terracotta-100 hover:text-terracotta-200 underline underline-offset-4 transition-colors duration-[230ms]"
@@ -64,7 +64,7 @@
         >
         and follow along on Instagram
         <a
-          href="https://www.instagram.com/fin_and_nance/"
+          :href="INSTAGRAM_URL"
           target="_blank"
           rel="noopener noreferrer"
           class="text-iris-100 hover:text-iris-200 underline underline-offset-4 transition-colors duration-[230ms]"
@@ -74,3 +74,7 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { AMAZON_BOOK_URL, INSTAGRAM_URL } from "../data/socials";
+</script>

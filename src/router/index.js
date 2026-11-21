@@ -3,7 +3,7 @@ import LandingView from "../views/LandingView.vue";
 import AboutView from "../views/AboutView.vue";
 import BooksView from "../views/BooksView.vue";
 
-const routes = [
+export const routes = [
   {
     path: "/",
     name: "Home",

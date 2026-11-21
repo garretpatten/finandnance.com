@@ -83,7 +83,7 @@
           :rel="social.isEmail ? undefined : 'noopener noreferrer'"
           :aria-label="social.ariaLabel ?? `${social.label} (opens in new tab)`"
           :title="social.ariaLabel ?? undefined"
-          class="interactive-focus inline-flex items-center justify-center rounded-md text-cobalt hover:text-torch-400 transition-colors duration-[230ms]"
+          class="interactive-focus inline-flex items-center justify-center rounded-md text-gray-100 hover:text-torch-300 transition-colors duration-[230ms]"
         >
           <svg
             aria-hidden="true"
@@ -167,7 +167,7 @@
               :rel="social.isEmail ? undefined : 'noopener noreferrer'"
               :aria-label="social.ariaLabel ?? `${social.label} (opens in new tab)`"
               :title="social.ariaLabel ?? undefined"
-              class="interactive-focus inline-flex items-center justify-center rounded-md text-cobalt hover:text-torch-400 transition-colors duration-[230ms]"
+              class="interactive-focus inline-flex items-center justify-center rounded-md text-gray-100 hover:text-torch-300 transition-colors duration-[230ms]"
             >
               <svg
                 aria-hidden="true"

@@ -2,7 +2,7 @@
   <div class="max-w-3xl mx-2 sm:mx-auto">
     <h1 class="sr-only">About the Author</h1>
 
-    <div class="mb-8 soft-enter flex justify-center">
+    <div class="mb-8 flex justify-center">
       <div class="rounded-full bg-terracotta p-1.5">
         <img
           src="/assets/images/maureen-patten.jpg"
@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="max-w-none soft-enter soft-enter-delay-1">
+    <div class="max-w-none">
       <p class="font-sans text-lg text-gray-100 leading-relaxed mb-6">
         Maureen Patten is the author and illustrator of the
         <em class="text-gray-100">Fin and Nance</em> children’s book series.

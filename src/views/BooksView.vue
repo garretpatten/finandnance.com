@@ -2,7 +2,7 @@
   <div class="max-w-4xl mx-auto">
     <h1 class="sr-only">Books</h1>
 
-    <section aria-labelledby="store-heading" class="soft-enter">
+    <section aria-labelledby="store-heading">
       <div class="text-center mb-10">
         <h2
           id="store-heading"

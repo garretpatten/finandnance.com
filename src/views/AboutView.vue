@@ -5,8 +5,12 @@
     <div class="mb-8 flex justify-center">
       <div class="rounded-full bg-terracotta p-1.5">
         <img
-          src="/assets/images/maureen-patten.jpg"
+          src="/assets/images/maureen-patten.webp"
           alt="Maureen Patten"
+          width="352"
+          height="352"
+          loading="lazy"
+          decoding="async"
           class="block h-36 w-36 md:h-44 md:w-44 rounded-full object-cover"
         />
       </div>

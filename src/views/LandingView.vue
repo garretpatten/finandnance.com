@@ -14,6 +14,7 @@
         alt="Fin and Nance characters"
         width="960"
         height="790"
+        fetchpriority="high"
         decoding="async"
         class="mx-auto w-full max-w-[480px]"
       />

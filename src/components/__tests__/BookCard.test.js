@@ -36,12 +36,12 @@ describe("BookCard", () => {
   it("shows the cover image when a cover is provided", () => {
     const wrapper = mountWithRouter({
       ...baseBook,
-      cover: "/assets/images/little-borrowing-brother-cover.jpg",
+      cover: "/assets/images/little-borrowing-brother-cover.webp",
     });
 
     const cover = wrapper.find("img");
     expect(cover.exists()).toBe(true);
-    expect(cover.attributes("src")).toBe("/assets/images/little-borrowing-brother-cover.jpg");
+    expect(cover.attributes("src")).toBe("/assets/images/little-borrowing-brother-cover.webp");
     expect(cover.attributes("alt")).toBe(`${baseBook.title} cover`);
   });
 

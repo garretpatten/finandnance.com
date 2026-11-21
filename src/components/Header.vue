@@ -10,8 +10,10 @@
         class="interactive-focus rounded-md hover:opacity-80 transition-opacity duration-[230ms]"
       >
         <img
-          src="/assets/images/coin.png"
+          src="/assets/images/coin.webp"
           alt="Fin and Nance"
+          width="206"
+          height="192"
           class="h-20 w-auto"
         />
       </router-link>
@@ -51,8 +53,10 @@
         class="interactive-focus rounded-md hover:opacity-80 transition-opacity duration-[230ms]"
       >
         <img
-          src="/assets/images/coin.png"
+          src="/assets/images/coin.webp"
           alt="Fin and Nance"
+          width="206"
+          height="192"
           class="h-24 w-auto"
         />
       </router-link>

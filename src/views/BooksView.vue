@@ -27,7 +27,7 @@ const books = ref([
   {
     title: "The Little Borrowing Brother",
     status: "available",
-    cover: "/assets/images/little-borrowing-brother-cover.jpg",
+    cover: "/assets/images/little-borrowing-brother-cover.webp",
     description:
       "Fin needs money fast, so he turns to his sister Nance for help. What seems like an easy loan to repay quickly spirals out of control. Nance wants to keep helping, but she's running out of patience—and savings!\n\nReaders will discover why saving money matters, why borrowing isn't free, and how loans and interest work.\n",
     topic: "Borrowing",
@@ -36,7 +36,7 @@ const books = ref([
   {
     title: "No Money Monday",
     status: "available",
-    cover: "/assets/images/no-money-monday-cover.jpg",
+    cover: "/assets/images/no-money-monday-cover.webp",
     description:
       "Fin is running out of time! He needs to buy muffin ingredients for his school bake sale. But there's a big problem: it's No Money Monday, and no one can use money. With his sister Nance by his side, they set off on a wild bartering adventure to get the muffin ingredients before it's too late.\n\nReaders will discover why money exists, why bartering is challenging, and interesting types of money.\n",
     topic: "Money Management",

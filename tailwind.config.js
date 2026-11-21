@@ -14,7 +14,6 @@ export default {
       fontFamily: {
         sans: ['"Libre Baskerville"', ...defaultTheme.fontFamily.serif],
         heading: ['"Libre Baskerville"', ...defaultTheme.fontFamily.serif],
-        mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         gray: {

@@ -66,7 +66,7 @@ public/
 ## Brand guidelines
 
 - **Palette:** earthy Gruvbox Dark Hard tones with warm brand accents (`terracotta`, `butter`, `aqua`, `sage`).
-- **Typography:** Libre Baskerville for headings and body; JetBrains Mono for accents.
+- **Typography:** Libre Baskerville for headings and body.
 - **Mascots:** Fin and Nance — the friendly faces of the series.
 - **Voice:** warm, encouraging, and accessible to kids and parents alike.
 

@@ -10,7 +10,6 @@
         :alt="`${book.title} cover`"
         width="576"
         height="890"
-        loading="lazy"
         decoding="async"
         class="w-60 sm:w-72 h-auto rounded-lg shadow-xl"
       />

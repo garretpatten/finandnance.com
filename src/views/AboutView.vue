@@ -9,7 +9,6 @@
           alt="Maureen Patten"
           width="352"
           height="352"
-          loading="lazy"
           decoding="async"
           class="block h-36 w-36 md:h-44 md:w-44 rounded-full object-cover"
         />

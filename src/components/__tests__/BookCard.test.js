@@ -43,6 +43,9 @@ describe('BookCard', () => {
     expect(cover.exists()).toBe(true);
     expect(cover.attributes('src')).toBe('/assets/images/little-borrowing-brother-cover.webp');
     expect(cover.attributes('alt')).toBe(`${baseBook.title} cover`);
+    // Covers are preloaded in index.html and must render eagerly so
+    // switching to the books view shows them instantly.
+    expect(cover.attributes('loading')).toBeUndefined();
   });
 
   it('falls back to a text placeholder when the cover is missing', () => {

@@ -35,6 +35,11 @@
       type="font/woff2"
       crossorigin
     />
+    <!-- View images preload with the app shell so route switches render
+         them instantly from cache instead of fetching on first visit. -->
+    <link rel="preload" as="image" href="/assets/images/little-borrowing-brother-cover.webp" />
+    <link rel="preload" as="image" href="/assets/images/no-money-monday-cover.webp" />
+    <link rel="preload" as="image" href="/assets/images/maureen-patten.webp" />
     <style>
       html,
       body {

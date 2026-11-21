@@ -1,8 +1,5 @@
 <template>
-  <header
-    :inert="isMenuOpen || undefined"
-    class="mb-8 pb-6 relative z-20 px-4 py-3"
-  >
+  <header :inert="isMenuOpen || undefined" class="mb-8 pb-6 relative z-20 px-4 py-3">
     <!-- Mobile Header: Logo and Hamburger -->
     <div class="flex items-center justify-between md:hidden">
       <router-link
@@ -70,11 +67,7 @@
           :key="navRoute.path"
           :to="navRoute.path"
           :aria-current="route.path === navRoute.path ? 'page' : undefined"
-          :class="[
-            desktopRouteClasses,
-            getRouteStateClasses(navRoute.path),
-            'interactive-focus',
-          ]"
+          :class="[desktopRouteClasses, getRouteStateClasses(navRoute.path), 'interactive-focus']"
         >
           {{ navRoute.name }}
         </router-link>
@@ -190,13 +183,13 @@
 </template>
 
 <script setup>
-import { ref, watch, onUnmounted, nextTick } from "vue";
-import { useRoute } from "vue-router";
-import { storeToRefs } from "pinia";
-import { useMediaQuery } from "@vueuse/core";
-import { useMenuStore } from "../stores/menu";
-import { routes as appRoutes } from "../router";
-import { socialLinks } from "../data/socials";
+import { ref, watch, onUnmounted, nextTick } from 'vue';
+import { useRoute } from 'vue-router';
+import { storeToRefs } from 'pinia';
+import { useMediaQuery } from '@vueuse/core';
+import { useMenuStore } from '../stores/menu';
+import { routes as appRoutes } from '../router';
+import { socialLinks } from '../data/socials';
 
 const route = useRoute();
 const menuStore = useMenuStore();
@@ -208,7 +201,7 @@ const closeMenuRef = ref(null);
 /* Close the dialog if the viewport grows past md while it is open;
    the menu UI is hidden at that width, so leaving it open would lock
    body scroll and trap focus in a hidden dialog. */
-const isDesktopViewport = useMediaQuery("(min-width: 768px)");
+const isDesktopViewport = useMediaQuery('(min-width: 768px)');
 watch(isDesktopViewport, (isDesktop) => {
   if (isDesktop) {
     menuStore.close();
@@ -223,12 +216,12 @@ const navRoutes = appRoutes.map(({ path, meta }) => ({
 }));
 
 const desktopRouteClasses =
-  "text-lg font-medium text-gray-100 transition-colors duration-[230ms] hover:text-cobalt-400";
+  'text-lg font-medium text-gray-100 transition-colors duration-[230ms] hover:text-cobalt-400';
 const mobileRouteClasses =
-  "text-2xl font-medium transition-colors duration-[230ms] py-3 text-center w-full text-gray-100 hover:text-cobalt-400";
+  'text-2xl font-medium transition-colors duration-[230ms] py-3 text-center w-full text-gray-100 hover:text-cobalt-400';
 
 const getRouteStateClasses = (path) =>
-  route.path === path ? "text-butter border-b-2 border-terracotta" : "";
+  route.path === path ? 'text-butter border-b-2 border-terracotta' : '';
 
 const focusCloseButton = () => {
   closeMenuRef.value?.focus();
@@ -242,19 +235,17 @@ const getMobileMenuFocusables = () => {
   const selector =
     'a[href], button:not([disabled]), select:not([disabled]), textarea:not([disabled]), input:not([disabled])';
 
-  return [...mobileMenuRef.value.querySelectorAll(selector)].filter(
-    (el) => el.tabIndex !== -1,
-  );
+  return [...mobileMenuRef.value.querySelectorAll(selector)].filter((el) => el.tabIndex !== -1);
 };
 
 const handleMobileMenuKeydown = (event) => {
-  if (event.key === "Escape") {
+  if (event.key === 'Escape') {
     event.preventDefault();
     closeMenu();
     return;
   }
 
-  if (event.key !== "Tab") {
+  if (event.key !== 'Tab') {
     return;
   }
 
@@ -287,7 +278,7 @@ const closeMenu = () => {
 };
 
 watch(isMenuOpen, async (open) => {
-  document.body.style.overflow = open ? "hidden" : "";
+  document.body.style.overflow = open ? 'hidden' : '';
   if (open) {
     await nextTick();
     focusCloseButton();
@@ -295,7 +286,7 @@ watch(isMenuOpen, async (open) => {
 });
 
 onUnmounted(() => {
-  document.body.style.overflow = "";
+  document.body.style.overflow = '';
 });
 
 watch(

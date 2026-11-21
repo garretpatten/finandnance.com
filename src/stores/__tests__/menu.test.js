@@ -1,19 +1,19 @@
-import { beforeEach, describe, expect, it } from "vitest";
-import { createPinia, setActivePinia } from "pinia";
-import { useMenuStore } from "../menu";
+import { beforeEach, describe, expect, it } from 'vitest';
+import { createPinia, setActivePinia } from 'pinia';
+import { useMenuStore } from '../menu';
 
-describe("useMenuStore", () => {
+describe('useMenuStore', () => {
   beforeEach(() => {
     setActivePinia(createPinia());
   });
 
-  it("starts closed", () => {
+  it('starts closed', () => {
     const menu = useMenuStore();
 
     expect(menu.isOpen).toBe(false);
   });
 
-  it("opens, closes, and toggles", () => {
+  it('opens, closes, and toggles', () => {
     const menu = useMenuStore();
 
     menu.open();

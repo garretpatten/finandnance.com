@@ -1,9 +1,8 @@
-import { ref, watch } from "vue";
-import { useRoute } from "vue-router";
+import { ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
-const SITE_URL = "https://finandnance.com";
-const FALLBACK_DESCRIPTION =
-  "Fin and Nance — a children's book series on financial literacy.";
+const SITE_URL = 'https://finandnance.com';
+const FALLBACK_DESCRIPTION = "Fin and Nance — a children's book series on financial literacy.";
 
 /**
  * Keeps the document title, meta description, and canonical/og:url in
@@ -15,31 +14,25 @@ const FALLBACK_DESCRIPTION =
  */
 export function useRouteAnnouncer() {
   const route = useRoute();
-  const announcement = ref("");
+  const announcement = ref('');
 
   const setMetaContent = (selector, content) => {
-    document.querySelector(selector)?.setAttribute("content", content);
+    document.querySelector(selector)?.setAttribute('content', content);
   };
 
   const setCanonicalUrl = (path) => {
     const url = `${SITE_URL}${path}`;
-    document
-      .querySelector('link[rel="canonical"]')
-      ?.setAttribute("href", url);
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href', url);
     setMetaContent('meta[property="og:url"]', url);
   };
 
   watch(
     () => route.fullPath,
     () => {
-      const pageTitle = route.meta?.title ?? route.name ?? "Page";
-      document.title =
-        route.path === "/" ? "Fin and Nance" : `${pageTitle} — Fin and Nance`;
+      const pageTitle = route.meta?.title ?? route.name ?? 'Page';
+      document.title = route.path === '/' ? 'Fin and Nance' : `${pageTitle} — Fin and Nance`;
       announcement.value = `${pageTitle} page loaded`;
-      setMetaContent(
-        'meta[name="description"]',
-        route.meta?.description ?? FALLBACK_DESCRIPTION,
-      );
+      setMetaContent('meta[name="description"]', route.meta?.description ?? FALLBACK_DESCRIPTION);
       setCanonicalUrl(route.path);
     },
     { immediate: true },

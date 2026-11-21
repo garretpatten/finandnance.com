@@ -23,34 +23,35 @@
       </p>
 
       <p class="font-sans text-lg text-gray-100 leading-relaxed mb-6">
-        Maureen earned her degree in Economics and Finance from Wofford College
-        and spent the next decade in commercial banking. She published a
+        Maureen earned her degree in Economics and Finance from Wofford College and spent the next
+        decade in commercial banking. She published a
         <a
           href="https://www.jpands.org/vol19no3/buff.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="text-terracotta-100 hover:text-terracotta-200 underline underline-offset-4 transition-colors duration-[230ms]"
           >paper</a
-        > in the Journal of American Physicians and Surgeons and later created
+        >
+        in the Journal of American Physicians and Surgeons and later created
         <a
           href="https://fee.org/articles/4-ways-to-teach-kids-finance/"
           target="_blank"
           rel="noopener noreferrer"
           class="text-iris-100 hover:text-iris-200 underline underline-offset-4 transition-colors duration-[230ms]"
           >content</a
-        > for the Foundation for Economic Education (FEE).
+        >
+        for the Foundation for Economic Education (FEE).
       </p>
 
       <p class="font-sans text-lg text-gray-100 leading-relaxed mb-6">
         Inspired by her time volunteering at elementary schools, she wrote the
-        <em class="text-gray-100">Fin and Nance</em> series after noticing a gap
-        in financial literacy.
+        <em class="text-gray-100">Fin and Nance</em> series after noticing a gap in financial
+        literacy.
       </p>
 
       <p class="font-sans text-lg text-gray-100 leading-relaxed mb-6">
-        Outside of her professional pursuits, she played Division I soccer and
-        coached youth soccer teams. Maureen lives in Georgia with her husband,
-        two children, and their beagle.
+        Outside of her professional pursuits, she played Division I soccer and coached youth soccer
+        teams. Maureen lives in Georgia with her husband, two children, and their beagle.
       </p>
 
       <p class="font-sans text-lg text-gray-100 leading-relaxed">
@@ -76,5 +77,5 @@
 </template>
 
 <script setup>
-import { AMAZON_BOOK_URL, INSTAGRAM_URL } from "../data/socials";
+import { AMAZON_BOOK_URL, INSTAGRAM_URL } from '../data/socials';
 </script>

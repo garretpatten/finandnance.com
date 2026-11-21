@@ -71,8 +71,8 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
-import { amazonIcon } from "../data/socials";
+import { computed } from 'vue';
+import { amazonIcon } from '../data/socials';
 
 const props = defineProps({
   book: {
@@ -83,9 +83,11 @@ const props = defineProps({
 
 const coverClass = computed(() => {
   const topic = props.book.topic;
-  if (topic === "Borrowing") return "bg-terracotta-900/60 text-terracotta-100 border border-terracotta-700";
-  if (topic === "Money Management") return "bg-butter-900/60 text-butter-100 border border-butter-700";
-  if (topic === "Inflation") return "bg-aqua-900/60 text-aqua-100 border border-aqua-700";
-  return "bg-gray-800 text-gray-100 border border-gray-700";
+  if (topic === 'Borrowing')
+    return 'bg-terracotta-900/60 text-terracotta-100 border border-terracotta-700';
+  if (topic === 'Money Management')
+    return 'bg-butter-900/60 text-butter-100 border border-butter-700';
+  if (topic === 'Inflation') return 'bg-aqua-900/60 text-aqua-100 border border-aqua-700';
+  return 'bg-gray-800 text-gray-100 border border-gray-700';
 });
 </script>

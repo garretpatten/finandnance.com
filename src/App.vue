@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="min-h-screen bg-[#3E604C] text-gray-100 transition-colors duration-[230ms]"
-  >
+  <div class="min-h-screen bg-[#3E604C] text-gray-100 transition-colors duration-[230ms]">
     <a
       href="#main-content"
       :inert="menuStore.isOpen || undefined"
@@ -10,11 +8,7 @@
       Skip to main content
     </a>
 
-    <div
-      aria-live="polite"
-      aria-atomic="true"
-      class="sr-only"
-    >
+    <div aria-live="polite" aria-atomic="true" class="sr-only">
       {{ announcement }}
     </div>
 
@@ -40,11 +34,11 @@
 </template>
 
 <script setup>
-import { useThemeStore } from "./stores/theme";
-import { useMenuStore } from "./stores/menu";
-import { useRouteAnnouncer } from "./composables/useRouteAnnouncer";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import { useThemeStore } from './stores/theme';
+import { useMenuStore } from './stores/menu';
+import { useRouteAnnouncer } from './composables/useRouteAnnouncer';
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 const themeStore = useThemeStore();
 const menuStore = useMenuStore();

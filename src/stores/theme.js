@@ -1,15 +1,16 @@
-import { defineStore } from "pinia";
-import { ref } from "vue";
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
 
 /**
- * Portfolio uses Gruvbox Dark Hard only (matches terminal); system theme is ignored.
+ * The Fin and Nance site uses Gruvbox Dark Hard only (matches terminal);
+ * system theme is ignored.
  */
-export const useThemeStore = defineStore("theme", () => {
+export const useThemeStore = defineStore('theme', () => {
   const isDark = ref(true);
   let isInitialized = false;
 
   const applyTheme = () => {
-    document.documentElement.classList.toggle("dark", isDark.value);
+    document.documentElement.classList.toggle('dark', isDark.value);
   };
 
   const initTheme = () => {

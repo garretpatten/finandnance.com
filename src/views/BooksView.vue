@@ -4,10 +4,7 @@
 
     <section aria-labelledby="store-heading">
       <div class="text-center mb-10">
-        <h2
-          id="store-heading"
-          class="text-3xl md:text-4xl font-bold text-gray-100 mb-3"
-        >
+        <h2 id="store-heading" class="text-3xl md:text-4xl font-bold text-gray-100 mb-3">
           The Fin & Nance Shop
         </h2>
       </div>
@@ -20,34 +17,36 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import BookCard from "../components/BookCard.vue";
+import { ref } from 'vue';
+import BookCard from '../components/BookCard.vue';
 
 const books = ref([
   {
-    title: "The Little Borrowing Brother",
-    status: "available",
-    cover: "/assets/images/little-borrowing-brother-cover.jpg",
+    title: 'The Little Borrowing Brother',
+    status: 'available',
+    cover: '/assets/images/little-borrowing-brother-cover.webp',
     description:
       "Fin needs money fast, so he turns to his sister Nance for help. What seems like an easy loan to repay quickly spirals out of control. Nance wants to keep helping, but she's running out of patience—and savings!\n\nReaders will discover why saving money matters, why borrowing isn't free, and how loans and interest work.\n",
-    topic: "Borrowing",
-    buyLink: "https://www.amazon.com/gp/product/0960000755?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks",
+    topic: 'Borrowing',
+    buyLink:
+      'https://www.amazon.com/gp/product/0960000755?ref_=dbs_m_mng_rwt_calw_tpbk_1&storeType=ebooks',
   },
   {
-    title: "No Money Monday",
-    status: "available",
-    cover: "/assets/images/no-money-monday-cover.jpg",
+    title: 'No Money Monday',
+    status: 'available',
+    cover: '/assets/images/no-money-monday-cover.webp',
     description:
       "Fin is running out of time! He needs to buy muffin ingredients for his school bake sale. But there's a big problem: it's No Money Monday, and no one can use money. With his sister Nance by his side, they set off on a wild bartering adventure to get the muffin ingredients before it's too late.\n\nReaders will discover why money exists, why bartering is challenging, and interesting types of money.\n",
-    topic: "Money Management",
-    buyLink: "https://www.amazon.com/gp/product/0960000763?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks",
+    topic: 'Money Management',
+    buyLink:
+      'https://www.amazon.com/gp/product/0960000763?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks',
   },
   {
-    title: "The Inflation Book",
-    status: "in-production",
+    title: 'The Inflation Book',
+    status: 'in-production',
     description:
-      "Fin and Nance watch chaos ensue as ticket prices skyrocket at their school fair. Supplies are running out, lines are getting long, and tensions are rising. Join Fin and Nance as they save the fair and solve the mystery of the sky-high prices.",
-    topic: "Inflation",
+      'Fin and Nance watch chaos ensue as ticket prices skyrocket at their school fair. Supplies are running out, lines are getting long, and tensions are rising. Join Fin and Nance as they save the fair and solve the mystery of the sky-high prices.',
+    topic: 'Inflation',
   },
 ]);
 </script>

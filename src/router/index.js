@@ -1,26 +1,37 @@
-import { createRouter, createWebHistory } from "vue-router";
-import LandingView from "../views/LandingView.vue";
-import AboutView from "../views/AboutView.vue";
-import BooksView from "../views/BooksView.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import LandingView from '../views/LandingView.vue';
+import AboutView from '../views/AboutView.vue';
+import BooksView from '../views/BooksView.vue';
 
-const routes = [
+export const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: LandingView,
-    meta: { title: "Home" },
+    meta: {
+      title: 'Home',
+      description: "Fin and Nance — a children's book series on financial literacy.",
+    },
   },
   {
-    path: "/about",
-    name: "About the Author",
+    path: '/about',
+    name: 'About the Author',
     component: AboutView,
-    meta: { title: "About the Author" },
+    meta: {
+      title: 'About the Author',
+      description:
+        "Meet Maureen Patten, author and illustrator of the Fin and Nance children's book series.",
+    },
   },
   {
-    path: "/books",
-    name: "Books",
+    path: '/books',
+    name: 'Books',
     component: BooksView,
-    meta: { title: "Books" },
+    meta: {
+      title: 'Books',
+      description:
+        'Browse the Fin and Nance chapter books — wholesome stories that teach saving, borrowing, bartering, and inflation.',
+    },
   },
 ];
 

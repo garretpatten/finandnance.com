@@ -19,7 +19,7 @@ Join siblings Fin and Nance as everyday adventures turn into real-world lessons 
 
 ## Setup
 
-Requires Node.js **20.19+** or **22.12+** (see `.nvmrc` / `package.json` engines).
+Requires Node.js **24+** (see `.nvmrc` / `package.json` engines).
 
 ```bash
 npm install
@@ -66,7 +66,7 @@ public/
 ## Brand guidelines
 
 - **Palette:** earthy Gruvbox Dark Hard tones with warm brand accents (`terracotta`, `butter`, `aqua`, `sage`).
-- **Typography:** Libre Baskerville for headings and body; JetBrains Mono for accents.
+- **Typography:** Libre Baskerville for headings and body.
 - **Mascots:** Fin and Nance — the friendly faces of the series.
 - **Voice:** warm, encouraging, and accessible to kids and parents alike.
 

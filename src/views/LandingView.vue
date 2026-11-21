@@ -2,18 +2,17 @@
   <div class="max-w-4xl mx-auto">
     <!-- Hero Section -->
     <section class="text-center mb-10 soft-enter">
-      <h1 class="text-5xl md:text-6xl font-bold text-gray-100 mb-4">
-        Fin & Nance
-      </h1>
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-100 mb-4">Fin & Nance</h1>
       <p class="font-sans text-xl md:text-2xl text-gray-100 mb-6">
-        A wholesome chapter book series that turns financial literacy into a
-        story-driven adventure for children aged 6–10.
+        A wholesome chapter book series that turns financial literacy into a story-driven adventure
+        for children aged 6–10.
       </p>
       <img
         src="/assets/images/fin-and-nance.webp"
         alt="Fin and Nance characters"
         width="960"
         height="790"
+        fetchpriority="high"
         decoding="async"
         class="mx-auto w-full max-w-[480px]"
       />
@@ -36,6 +35,5 @@
         </router-link>
       </div>
     </section>
-
   </div>
 </template>

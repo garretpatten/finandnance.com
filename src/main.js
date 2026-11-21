@@ -1,11 +1,8 @@
-import { createApp } from "vue";
-import { createPinia } from "pinia";
-import App from "./App.vue";
-import router from "./router";
-import { initLinkSpaceActivation } from "./utils/keyboard";
-import "./assets/css/main.css";
-
-initLinkSpaceActivation();
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from './App.vue';
+import router from './router';
+import './assets/css/main.css';
 
 const app = createApp(App);
 const pinia = createPinia();
@@ -13,4 +10,4 @@ const pinia = createPinia();
 app.use(pinia);
 app.use(router);
 
-app.mount("#app");
+app.mount('#app');
